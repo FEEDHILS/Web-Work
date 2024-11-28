@@ -1,0 +1,65 @@
+/* Шрифт для сайта */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* ХТМЛ-Теги */
+body {
+    background-image: url("../img/bg_main.jpg");
+    /* background-size: 125%; */
+    background-position: 60% 0%;
+    background-size: 275vmin;
+    background-repeat:no-repeat;
+    background-color: rgb(35,35,37);
+    color:white;
+    height: 100vh;
+
+    /* Стандартный шрифт */
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+}
+
+h1 {
+    font-size: 2.3em;
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Классы */
+.spacer {
+    height:35vh;
+    opacity: .1;
+}
+
+.btn-nav {
+    color: rgb(190, 190, 190);
+    font-size: 1em;
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.current-page {
+    font-size: 1em;
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.parLinks {
+    font-size: .75em;
+    word-spacing: 10px;
+    color: rgb(125, 142, 158);
+}
+
+
+/* Адаптивность */
+/* Аналогично брейкпоинту lg */
+@media (max-width: 992px) { 
+    .spacer {
+        height:0vh;
+        opacity: .1;
+    }
+}

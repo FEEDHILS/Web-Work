@@ -1,0 +1,79 @@
+// Весь код здесь связан с модальной кнопкой (кроме .form-control)
+
+$modal-fade-transform: translate(0, 100px);
+$modal-content-bg: none;
+$modal-content-border-width: 0;
+$modal-backdrop-bg: "white";
+$input-color: #fff;
+$input-bg: rgba(0,0,0,0);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+$input-focus-color: rgb(120, 120, 0);
+
+.modal {
+    overflow-y: hidden;
+}
+
+.modal-content {
+    background-image: url("../img/ModalButtonBG.png");
+    background-size: 100vmin;
+    background-position-y: 65%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 10px 10px;
+    width: 50vw;
+    justify-self: center;
+}
+
+.modal-body h1 {
+    font-size: 1.8em;
+}
+
+.modal-footer {
+    font-size: .6em;
+}
+
+.form-control::placeholder {
+    color: #fff;
+    opacity: .5;
+}
+
+textarea.form-control {
+    height: 20vh;
+}
+
+
+// Адаптивность для модальной штуки
+// Делаем модаль чуть шире, меняем фон с картинки на градиент
+@include media-breakpoint-down(xl) {
+    .modal-content {
+        background-image: none;
+        background: linear-gradient(180deg, rgba(19,143,229,1) 0%, rgba(106,182,234,1) 100%);
+        border-radius: 0px 0px 10px 10px;
+        width: 65vw;
+        justify-self: center;
+    }
+}
+// Полностью растягиваем модал на весь экран (как и подрузамевалось изначально)
+@include media-breakpoint-down(lg) {
+    .modal-content {
+        width: 100vw;
+        justify-self: center;
+    }
+}
+// Небольшой отступ, помогает избежать некоторых специфичных ситуаций
+@media (orientation: portrait) {
+    .modal-content {
+        padding-top: 5%;
+    }
+}
+
+// То же самае что и до этого, но для случая когда экран слишком широкий (ultrawide напр.)
+@media (min-aspect-ratio: 2.1) {
+    .modal-content {
+        width: 100vw;
+        justify-self: center;
+        background-image: none;
+        background: linear-gradient(180deg, rgba(19,143,229,1) 0%, rgba(106,182,234,1) 100%);
+    }
+}

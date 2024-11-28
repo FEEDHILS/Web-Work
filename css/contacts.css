@@ -1,0 +1,78 @@
+@import url("../css/main.css");
+
+/* ХТМЛ-Теги */
+body {
+    background-color: white;
+    background-image: url("../img/bg-contacts.jpg");
+    background-position: 60% 0%;
+    background-size: 100vmax;
+    background-repeat:no-repeat;
+    color:white;
+    height: 100vh;
+    font-size: 1.4em;
+    /* letter-spacing: 3px; */
+}
+
+input, textarea {
+    border-width: 2px !important;
+    border-radius: 30px !important;
+    padding: 0.8em !important;
+}
+
+
+/* Классы */
+.btn-contacts-file {
+    border-radius: 50px;
+    background-color: rgb(114,186,235);
+    color: white;
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.btn-contacts-send {
+    border-radius: 50px;
+    background-color: white;
+    color: var(--bs-primary);
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Корректное отображение иконки скрепки */
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+/* p.s Кнопка открывающая модал */
+.coolButton {
+    border-radius: 20px;
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Адаптивность (Заднего Фона)*/
+@media (max-aspect-ratio: 1) {
+    body {
+        background-size: 200vmin;
+        background-position: 90% 0%;
+    }
+}
+
+@media (max-aspect-ratio: .5) {
+    body {
+        background-size: 250vmin;
+        background-position: 90% 0%;
+    }
+}
+
+@media (max-width: 992px) { 
+    main {
+        background: linear-gradient(180deg, rgba(72, 72, 72, 0.15) 0%, rgba(157, 179, 193, 0.717) 100%);
+        border-radius: 10px;
+    }
+}
+
+
