@@ -1,4 +1,5 @@
 // Весь код здесь связан с модальной кнопкой (кроме .form-control)
+
 @import "../node_modules/bootstrap/scss/functions";
 $modal-fade-transform: translate(0, 100px);
 $modal-content-bg: none;
@@ -6,8 +7,9 @@ $modal-content-border-width: 0;
 $modal-backdrop-bg: "white";
 $input-color: #fff;
 $input-bg: rgba(0,0,0,0);
-// $input-focus-color: rgb(120, 120, 0);
 
+// $input-focus-color: rgb(120, 120, 0);
+// @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
@@ -23,6 +25,11 @@ $input-bg: rgba(0,0,0,0);
 
 .modal {
     overflow-y: hidden;
+}
+
+.modal-dialog {
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
