@@ -1,14 +1,25 @@
 // Весь код здесь связан с модальной кнопкой (кроме .form-control)
-
+@import "../node_modules/bootstrap/scss/functions";
 $modal-fade-transform: translate(0, 100px);
 $modal-content-bg: none;
 $modal-content-border-width: 0;
 $modal-backdrop-bg: "white";
 $input-color: #fff;
 $input-bg: rgba(0,0,0,0);
+// $input-focus-color: rgb(120, 120, 0);
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-$input-focus-color: rgb(120, 120, 0);
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/forms/form-control";
+
+// @import "../node_modules/bootstrap/scss/utilities/api";
+
 
 .modal {
     overflow-y: hidden;
