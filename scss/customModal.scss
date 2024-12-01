@@ -71,9 +71,11 @@ textarea.form-control {
 // То же самае что и до этого, но для случая когда экран слишком широкий (ultrawide напр.)
 @media (min-aspect-ratio: 2.1) {
     .modal-content {
-        width: 100vw;
-        justify-self: center;
-        background-image: none;
-        background: linear-gradient(180deg, rgba(19,143,229,1) 0%, rgba(106,182,234,1) 100%);
+        width: 80vw;
+        background-size: 100vmax;
+        background-position-y: 10%;
+        // justify-self: center;
+        // background-image: none;
+        // background: linear-gradient(180deg, rgba(19,143,229,1) 0%, rgba(106,182,234,1) 100%);
     }
 }
